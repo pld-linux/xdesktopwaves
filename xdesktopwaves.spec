@@ -1,12 +1,12 @@
 Summary:	Simulation of water waves on the X Window System desktop
 Summary(pl):	Symulacja fal wodnych na pulpicie X Window System
 Name:		xdesktopwaves
-Version:	1.2
+Version:	1.3
 Release:	1
 License:	GPL
 Group:		X11/Amusements
 Source0:	http://dl.sourceforge.net/xdesktopwaves/%{name}-%{version}.tar.gz
-# Source0-md5:	a91384eab6050402fd2112124ea7c8bb
+# Source0-md5:	4ef1233527cb3bbf06b8fdc407b04ebe
 URL:		http://xdesktopwaves.sourceforge.net/
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -33,18 +33,28 @@ sztorm burz±cy powierzchniê wody.
 	CFLAGS="%{rpmcflags}" \
 	LFLAGS="%{rpmldflags} -L%{_prefix}/X11R6/%{_lib}" \
 
+%{__make} -C xdwapi \
+	CC="%{__cc}" \
+	LINK="%{__cc}" \
+	CFLAGS="%{rpmcflags}" \
+	LFLAGS="%{rpmldflags} -L%{_prefix}/X11R6/%{_lib}" \
+
+
+
+
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
-install xdesktopwaves	$RPM_BUILD_ROOT%{_bindir}
-install xdesktopwaves.1	$RPM_BUILD_ROOT%{_mandir}/man1
+install xdesktopwaves		$RPM_BUILD_ROOT%{_bindir}
+install xdwapi/xdwapidemo	$RPM_BUILD_ROOT%{_bindir}
+install xdesktopwaves.1		$RPM_BUILD_ROOT%{_mandir}/man1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
+%doc README xdwapi/README.xdwapi
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
