@@ -1,25 +1,25 @@
-Summary:	Simulation of water waves on the X Window desktop
-Summary(pl):	Symulacja fali wodnych na pulpicie X Window
+Summary:	Simulation of water waves on the X Window System desktop
+Summary(pl):	Symulacja fal wodnych na pulpicie X Window System
 Name:		xdesktopwaves
 Version:	1.0
 Release:	1
 License:	GPL
 Group:		X11/Amusements
-Source0:	http://dl.sf.net/xdesktopwaves/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/xdesktopwaves/%{name}-%{version}.tar.gz
 # Source0-md5:	a4760fd21010fe292682d8680d4ff083
 URL:		http://xdesktopwaves.sourceforge.net/
+BuildRequires:	XFree86-devel
 ExcludeArch:	amd64
-BuildRequires:	X11-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 xdesktopwaves is a cellular automata setting the background of your X
-Window desktop under water. Windows and mouse are like ships on the
-sea. Each movement of these ends up in moving water waves. You can
+Window System desktop under water. Windows and mouse are like ships on
+the sea. Each movement of these ends up in moving water waves. You can
 even have rain and/or storm stirring up the water.
 
 %description -l pl
-xdesktopwaves to automat komórkowy sprawiaj±cy, ¿e pulpit X Window
+xdesktopwaves to automat komórkowy sprawiaj±cy, ¿e pulpit X Window System
 znajduje siê pod wod±. Okna i mysz s± jak statki na morzu. Ka¿dy ich
 ruch powoduje powstanie fal. Mo¿na te¿ w³±czyæ deszcz i/lub sztorm
 burz±cy powierzchniê wody.
