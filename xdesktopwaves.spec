@@ -19,10 +19,10 @@ the sea. Each movement of these ends up in moving water waves. You can
 even have rain and/or storm stirring up the water.
 
 %description -l pl
-xdesktopwaves to automat komórkowy sprawiaj±cy, ¿e pulpit X Window System
-znajduje siê pod wod±. Okna i mysz s± jak statki na morzu. Ka¿dy ich
-ruch powoduje powstanie fal. Mo¿na te¿ w³±czyæ deszcz i/lub sztorm
-burz±cy powierzchniê wody.
+xdesktopwaves to automat komórkowy sprawiaj±cy, ¿e pulpit X Window
+System znajduje siê pod wod±. Okna i mysz s± jak statki na morzu.
+Ka¿dy ich ruch powoduje powstanie fal. Mo¿na te¿ w³±czyæ deszcz i/lub
+sztorm burz±cy powierzchniê wody.
 
 %prep
 %setup -q
