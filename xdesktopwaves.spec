@@ -33,7 +33,7 @@ burz±cy powierzchniê wody.
 	CFLAGS="%{rpmcflags}" \
 	LFLAGS="%{rpmldflags} -L%{_prefix}/X11R6/%{_lib}" \
 %ifarch amd64
-	XDW_MAX_OPTIMIZATION=1
+	XDW_MAX_OPTIMIZATION=0
 %endif
 
 %install
