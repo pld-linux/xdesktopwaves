@@ -1,0 +1,25 @@
+--- xdesktopwaves-1.0/xdesktopwaves.c.orig	2004-11-18 09:55:23.000000000 +0100
++++ xdesktopwaves-1.0/xdesktopwaves.c	2004-11-20 18:42:15.448007432 +0100
+@@ -543,15 +543,15 @@
+ 	/* Check for CPUID. */
+ 	asm volatile (
+ 		"  pushf                    \n"
+-		"  pop    %%eax             \n"
+-		"  movl   %%eax,%%ecx       \n"
+-		"  xorl   $0x00200000,%%eax \n"
+-		"  push   %%eax             \n"
++		"  popq   %%rax             \n"
++		"  movq   %%rax,%%rcx       \n"
++		"  xorq   $0x00200000,%%rax \n"
++		"  pushq  %%rax             \n"
+ 		"  popf                     \n"
+ 		"  pushf                    \n"
+-		"  pop    %%eax             \n"
+-		"  xorl   %%ecx,%%eax       \n"
+-		"  push   %%ecx             \n"
++		"  popq   %%rax             \n"
++		"  xorq   %%rcx,%%rax       \n"
++		"  pushq  %%rcx             \n"
+ 		"  popf                     \n"
+ 		"  andl   $0x00200000,%%eax \n"
+ 		"  shrl   $21,%%eax         \n"
