@@ -8,6 +8,7 @@ Group:		X11/Amusements
 Source0:	http://dl.sf.net/xdesktopwaves/%{name}-%{version}.tar.gz
 # Source0-md5:	a4760fd21010fe292682d8680d4ff083
 URL:		http://xdesktopwaves.sourceforge.net/
+ExcludeArch:	amd64
 BuildRequires:	X11-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -32,9 +33,6 @@ burz±cy powierzchniê wody.
 	LINK="%{__cc}" \
 	CFLAGS="%{rpmcflags}" \
 	LFLAGS="%{rpmldflags} -L%{_prefix}/X11R6/%{_lib}" \
-%ifarch amd64
-	XDW_MAX_OPTIMIZATION=0
-%endif
 
 %install
 rm -rf $RPM_BUILD_ROOT
