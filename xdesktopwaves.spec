@@ -31,7 +31,10 @@ burz±cy powierzchniê wody.
 	CC="%{__cc}" \
 	LINK="%{__cc}" \
 	CFLAGS="%{rpmcflags}" \
-	LFLAGS="%{rpmldflags} -L%{_prefix}/X11R6/%{_lib}"
+	LFLAGS="%{rpmldflags} -L%{_prefix}/X11R6/%{_lib}" \
+%ifarch amd64
+	XDW_MAX_OPTIMIZATION=1
+%endif
 
 %install
 rm -rf $RPM_BUILD_ROOT
