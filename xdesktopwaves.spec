@@ -5,7 +5,7 @@ Version:	1.3
 Release:	1
 License:	GPL
 Group:		X11/Amusements
-Source0:	http://dl.sourceforge.net/xdesktopwaves/%{name}-%{version}.tar.gz
+Source0:	http://heanet.dl.sourceforge.net/xdesktopwaves/%{name}-%{version}.tar.gz
 # Source0-md5:	4ef1233527cb3bbf06b8fdc407b04ebe
 URL:		http://xdesktopwaves.sourceforge.net/
 BuildRequires:	XFree86-devel
