@@ -39,9 +39,6 @@ sztorm burz±cy powierzchniê wody.
 	CFLAGS="%{rpmcflags}" \
 	LFLAGS="%{rpmldflags} -L%{_prefix}/X11R6/%{_lib}" \
 
-
-
-
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
