@@ -1,12 +1,12 @@
 Summary:	Simulation of water waves on the X Window System desktop
 Summary(pl):	Symulacja fal wodnych na pulpicie X Window System
 Name:		xdesktopwaves
-Version:	1.1
+Version:	1.2
 Release:	1
 License:	GPL
 Group:		X11/Amusements
 Source0:	http://dl.sourceforge.net/xdesktopwaves/%{name}-%{version}.tar.gz
-# Source0-md5:	eaeef9eb3285ccac9f94287ef1b75073
+# Source0-md5:	a91384eab6050402fd2112124ea7c8bb
 URL:		http://xdesktopwaves.sourceforge.net/
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
