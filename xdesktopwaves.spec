@@ -8,7 +8,7 @@ Group:		X11/Amusements
 Source0:	http://dl.sourceforge.net/xdesktopwaves/%{name}-%{version}.tar.gz
 # Source0-md5:	4ef1233527cb3bbf06b8fdc407b04ebe
 URL:		http://xdesktopwaves.sourceforge.net/
-BuildRequires:	XFree86-devel
+BuildRequires:	xorg-lib-libX11-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
