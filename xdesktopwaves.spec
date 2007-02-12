@@ -1,5 +1,5 @@
 Summary:	Simulation of water waves on the X Window System desktop
-Summary(pl.UTF-8):   Symulacja fal wodnych na pulpicie X Window System
+Summary(pl.UTF-8):	Symulacja fal wodnych na pulpicie X Window System
 Name:		xdesktopwaves
 Version:	1.3
 Release:	1
